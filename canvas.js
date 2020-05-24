@@ -1,5 +1,6 @@
 var canvas = document.querySelector('canvas');
-var score = document.querySelector('h5')
+var score = document.querySelector('h5');
+
 
 canvas.width = 500;
 canvas.height = 500;
@@ -34,12 +35,18 @@ window.addEventListener('keydown',(event)=>{
      
     direction = event.key
      
-    directionLog(direction)
+    
     
 
 })
 
-
+document.getElementById('controls').addEventListener('touchstart',(event)=>{
+    var touch = event.target.id
+    if(touch==='ArrowUp'||touch==='ArrowDown'||touch==='ArrowLeft'||touch==='ArrowRight'){
+        direction = touch
+    }
+    
+})
 
 const positionLog = (x,y)=>{
     
