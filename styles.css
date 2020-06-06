@@ -11,10 +11,12 @@ img{
     width:150px;
     border:solid;
     margin: '10px';
-    touch-action: manipulation;
+
     
 }
 
 
-
+body {
+    touch-action: manipulation;
+    }
 
